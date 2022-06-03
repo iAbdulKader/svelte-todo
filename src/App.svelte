@@ -10,9 +10,7 @@
 
 <style>
 	main {
-		background: #8aacb5;
 		width: 100%;
 		height: 100%;
-		
 	}
 </style>

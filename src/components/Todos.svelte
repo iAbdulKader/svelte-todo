@@ -22,11 +22,11 @@
   }
   
   function handleUpdate({detail}){
+    if(detail.text === "") return;
     
     const index = $todos.findIndex(todo => todo.id === detail.id);
     $todos[index] = detail;
     TodoApi.save($todos)
-    console.log("updated")
   }
   
   function handleDelete({detail: id}){
@@ -44,7 +44,7 @@
 
 <style>
    .todos{
-      margin-top: 5px;
+      margin: 0 auto;
       width: calc(100%);
       max-width: 500px;
       background: #cdd8da;
